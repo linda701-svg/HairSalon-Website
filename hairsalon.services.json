@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "698c4f339ed9906c03a26437"
+  },
+  "title": "Hair Stylish",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+  "price": 50,
+  "duration": 30,
+  "image": "/uploads/image-1770802956025.jpg",
+  "category": "Styling",
+  "createdAt": {
+    "$date": "2026-02-11T09:43:15.266Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-11T09:43:15.266Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698c52879ed9906c03a26460"
+  },
+  "title": "Hair Cutting",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+  "price": 20,
+  "duration": 1.3,
+  "image": "/uploads/image-1770803836056.jpg",
+  "category": "Cutting",
+  "createdAt": {
+    "$date": "2026-02-11T09:57:27.863Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-11T09:57:27.863Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698c52f59ed9906c03a2646d"
+  },
+  "title": "Hair Colour",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+  "price": 100,
+  "duration": 2,
+  "image": "/uploads/image-1770803948576.jpg",
+  "category": "Coloring",
+  "createdAt": {
+    "$date": "2026-02-11T09:59:17.024Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-11T09:59:17.024Z"
+  },
+  "__v": 0
+}]

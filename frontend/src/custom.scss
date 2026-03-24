@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&family=Nunito:wght@300;400;600;700&family=Roboto+Slab:wght@300;400;700&display=swap');
+
+// Custom Colors
+$primary: #D4AF37; // Gold
+$secondary: #0F0F0F; // Deep Black
+$light: #F9F9F9; // Off-White
+$dark: #0F0F0F;
+$off-white: #FBFBFB;
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Overrides
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: $light;
+  color: $secondary;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cormorant', serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.script-font {
+  font-family: 'Dancing Script', cursive;
+  color: $primary;
+}
+
+.slab-font {
+  font-family: 'Roboto Slab', serif;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  color: #fff;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+    border-color: darken($primary, 10%);
+  }
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}

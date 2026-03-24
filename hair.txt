@@ -1,0 +1,41 @@
+envato design-https://kitpro.site/cabello/template-kit/about-us/
+
+Project Prompt: Cabello Hair Salon SaaS
+Goal: Build a premium, high-conversion Salon Management and Booking Platform.
+
+Core Stack (MERN)
+Frontend: React (JavaScript), Bootstrap 5, Custom CSS (for luxury styling).
+
+Backend: Node.js, Express.js.
+
+Database: MongoDB (Mongoose for schema modeling).
+
+Key Features
+Service Showcase: A visual catalog of hairstyles and treatments with pricing and duration.
+
+Appointment Booking: A multi-step form for users to select a stylist, date, and hairstyle.
+
+Stylist Portfolio: Dedicated profiles for hair artists showing their specific expertise.
+
+User Dashboard: For customers to view/cancel appointments and save "Favorite Styles."
+
+Admin Panel: To manage bookings, update the service list, and track revenue.
+
+Technical Requirements
+UI/UX (Cabello Inspired):
+
+Use a Gold, Black, and Off-White color palette.
+
+Implement Bootstrap containers and grids for responsiveness, but use Custom CSS for elegant serif typography (e.g., Playfair Display).
+
+Sticky navigation with a "Book Now" call-to-action button.
+
+Data Models (MongoDB):
+
+User: Name, Email, Password (hashed), Phone.
+
+Service: Title (e.g., "Classic Fade"), Description, Price, Image URL.
+
+Appointment: UserID, ServiceID, StylistName, Date, Status (Pending/Completed).
+
+State Management: Use React Context API or standard useState/useEffect hooks (No Redux or TypeScript).

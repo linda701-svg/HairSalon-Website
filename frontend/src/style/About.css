@@ -1,0 +1,581 @@
+.about-hero-section {
+    background-color: #ECF0D8;
+    /* Light olive/cream color from image */
+    padding: 100px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-arch-wrapper {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.about-arch-container {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    border-radius: 250px 250px 0 0;
+    /* Creates the arch shape */
+    overflow: hidden;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-arch-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.leaf-decoration-about {
+    position: absolute;
+    bottom: -40px;
+    left: -60px;
+    width: 180px;
+    z-index: 10;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.1));
+}
+
+.about-text-content {
+    padding-left: 50px;
+}
+
+.about-title-main {
+    font-family: 'Cormorant', serif;
+    font-size: 5rem;
+    color: #2F3E2F;
+    margin-bottom: 0;
+}
+
+.about-subtitle-script {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+    color: #2F3E2F;
+    margin-bottom: 30px;
+}
+
+.about-description-text {
+    font-family: 'Nunito', sans-serif;
+    color: #2F3E2F;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    max-width: 550px;
+    opacity: 0.9;
+}
+
+@media (max-width: 991px) {
+    .about-text-content {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .about-description-text {
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+
+    .about-title-main {
+        font-size: 3rem;
+    }
+
+    .about-subtitle-script {
+        font-size: 1.8rem;
+    }
+
+    .about-hero-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-arch-wrapper {
+        max-width: 400px;
+    }
+
+    .leaf-decoration-about {
+        width: 120px;
+        bottom: -20px;
+        left: -30px;
+    }
+}
+
+/* OUR STORY SECTION */
+.about-story-section {
+    position: relative;
+    background-image: url('../assets/girl-woman-camera-casual-photograph-photo-concept-PP8NFQH.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.about-story-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(236, 240, 216, 0.6);
+    z-index: 1;
+}
+
+.story-text-container {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(236, 240, 216, 0.85);
+    padding: 60px 80px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.story-title-main {
+    font-family: 'Cormorant', serif;
+    font-size: 4rem;
+    color: #2F3E2F;
+    margin-bottom: 5px;
+}
+
+.story-subtitle-script {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #2F3E2F;
+    margin-bottom: 30px;
+}
+
+.story-description {
+    font-family: 'Nunito', sans-serif;
+    color: #2F3E2F;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+@media (max-width: 991px) {
+    .story-text-container {
+        padding: 50px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .story-text-container {
+        padding: 40px 25px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .story-title-main {
+        font-size: 2.5rem;
+    }
+
+    .about-story-section {
+        padding: 60px 0;
+        background-attachment: scroll;
+    }
+}
+
+/* WHY WE ARE DIFFERENT SECTION */
+.about-different-section {
+    padding: 100px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.different-title-main {
+    font-family: 'Cormorant', serif;
+    font-size: 4rem;
+    color: #2F3E2F;
+    margin-bottom: 5px;
+}
+
+.different-subtitle-script {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #2F3E2F;
+    margin-bottom: 60px;
+}
+
+.different-card {
+    background-color: #ECF0D8;
+    /* Light olive background */
+    padding: 40px 30px;
+    height: 100%;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.different-card:hover {
+    transform: translateY(-10px);
+}
+
+.different-card-image-wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.different-card-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.different-card-title {
+    font-family: 'Cormorant', serif;
+    font-size: 2.5rem;
+    color: #2F3E2F;
+    margin-bottom: 10px;
+}
+
+.different-card-text {
+    font-family: 'Nunito', sans-serif;
+    color: #2F3E2F;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* DIFFERENT CARD TOP BOX - MATCHING SERVICES GRID */
+.different-card-top-box {
+    background-color: rgba(212, 218, 176, 0.5);
+    /* Semi-transparent olive box */
+    padding: 25px;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .different-title-main {
+        font-size: 3rem;
+    }
+
+    .about-different-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .different-card {
+        padding: 30px 20px;
+    }
+    
+    .different-card-title {
+        font-size: 2rem;
+    }
+}
+
+/* PROGRESS SECTION - DIFFERENT */
+.about-progress-section {
+    background-color: #D4DAB0;
+    /* Olive background from image */
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-image-col {
+    padding: 0;
+}
+
+.progress-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 600px;
+}
+
+.progress-content-col {
+    padding: 80px 100px 80px 50px;
+    position: relative;
+}
+
+.progress-header-leaf {
+    position: absolute;
+    top: -50px;
+    right: -20px;
+    width: 200px;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.progress-title {
+    font-family: 'Cormorant', serif;
+    font-size: 4rem;
+    color: #2F3E2F;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.progress-subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #2F3E2F;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.progress-description {
+    font-family: 'Nunito', sans-serif;
+    color: #2F3E2F;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-progress-item {
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-progress-bar-wrapper {
+    height: 35px;
+    background-color: #E6EBCA;
+    /* Lighter olive for empty part */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.custom-progress-bar-fill {
+    height: 100%;
+    background-color: #2F3E2F;
+    /* Dark green fill */
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.custom-progress-label {
+    color: #ECF0D8;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 1199px) {
+    .progress-content-col {
+        padding: 60px 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .progress-image {
+        min-height: 400px;
+    }
+
+    .progress-title {
+        font-size: 3rem;
+    }
+
+    .progress-content-col {
+        padding: 60px 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .progress-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* COUNTERS SECTION */
+.about-counters-section {
+    position: relative;
+    background-image: url('https://kitpro.site/cabello/wp-content/uploads/sites/25/2021/05/home-care-items-essential-oil-bowls-with-water-and-XAL4ND6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.about-counters-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(212, 218, 176, 0.85);
+    /* Heavy olive overlay matching image */
+    z-index: 1;
+}
+
+.counter-card {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.counter-icon {
+    font-size: 4rem;
+    color: #2F3E2F;
+    margin-bottom: 30px;
+}
+
+.counter-number {
+    font-family: 'Cormorant', serif;
+    font-size: 5rem;
+    color: #2F3E2F;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.counter-label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    color: #2F3E2F;
+    text-transform: capitalize;
+    opacity: 0.9;
+}
+
+.counter-decoration-leaf {
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    width: 250px;
+    z-index: 2;
+    opacity: 0.7;
+    filter: grayscale(1) contrast(0.5);
+    /* Matching the dark muted leaf in image */
+}
+
+@media (max-width: 991px) {
+    .about-counters-section {
+        padding: 60px 0;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .counter-number {
+        font-size: 2.8rem;
+    }
+
+    .counter-icon img {
+        width: 60px !important;
+    }
+
+    .counter-label {
+        font-size: 0.9rem;
+    }
+}
+
+/* SPECIAL GIFT SECTION */
+.about-special-gift-section {
+    padding: 100px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.gift-title-main {
+    font-family: 'Cormorant', serif;
+    font-size: 4rem;
+    color: #2F3E2F;
+    margin-bottom: 5px;
+}
+
+.gift-subtitle-script {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #2F3E2F;
+    margin-bottom: 60px;
+}
+
+.gift-card {
+    background-color: #ECF0D8;
+    /* Light olive background */
+    padding: 50px 30px;
+    height: 100%;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-card:hover {
+    transform: translateY(-10px);
+}
+
+.gift-card-image-wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.gift-card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.gift-card-title {
+    font-family: 'Cormorant', serif;
+    font-size: 2.5rem;
+    color: #2F3E2F;
+    margin-bottom: 15px;
+}
+
+.gift-card-text {
+    font-family: 'Nunito', sans-serif;
+    color: #2F3E2F;
+    font-size: 1.05rem;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+.gift-card-link {
+    font-family: 'Nunito', sans-serif;
+    color: #2F3E2F;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: 1px solid #2F3E2F;
+    padding-bottom: 3px;
+    transition: opacity 0.3s ease;
+}
+
+.gift-card-link:hover {
+    opacity: 0.7;
+    color: #2F3E2F;
+}
+
+@media (max-width: 991px) {
+    .gift-title-main {
+        font-size: 3rem;
+    }
+
+    .about-special-gift-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .gift-card {
+        padding: 30px 20px;
+    }
+    
+    .gift-card-title {
+        font-size: 2rem;
+    }
+}

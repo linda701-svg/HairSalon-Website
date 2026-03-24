@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "698c55779ed9906c03a26482"
+  },
+  "name": "Arie Reyna",
+  "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed dor ",
+  "specialties": [
+    "Profesional Hair Stylist"
+  ],
+  "image": "/uploads/image-1770804587574.jpg",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-02-11T10:09:59.199Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-11T10:09:59.199Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698c5f429ed9906c03a26506"
+  },
+  "name": "Liyn Cheryn",
+  "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed dor ",
+  "specialties": [
+    "Profesional Hair Cutting"
+  ],
+  "image": "/uploads/image-1770807092782.jpg",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-02-11T10:51:46.175Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-11T10:51:46.175Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698c60189ed9906c03a26516"
+  },
+  "name": "Therisa",
+  "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+  "specialties": [
+    "Profesional Hair Colour"
+  ],
+  "image": "/uploads/image-1770807310989.jpg",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2026-02-11T10:55:20.169Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-11T10:55:20.169Z"
+  },
+  "__v": 0
+}]

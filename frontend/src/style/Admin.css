@@ -1,0 +1,212 @@
+.admin-dashboard-wrapper {
+    min-height: 100vh;
+    background-color: #F8F9F8;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 80px;
+    margin-bottom: -20px;
+}
+
+/* Sidebar Custom Styling */
+.admin-sidebar {
+    background-color: #2F3E2F !important;
+    border-radius: 20px;
+    padding: 25px 15px !important;
+    min-height: 80vh;
+    border: none !important;
+    box-shadow: 0 10px 30px rgba(47, 62, 47, 0.15);
+}
+
+.admin-sidebar .nav-link {
+    color: #acc0ac !important;
+    font-weight: 600;
+    padding: 12px 20px !important;
+    margin-bottom: 8px;
+    border-radius: 12px !important;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.admin-sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white !important;
+    transform: translateX(5px);
+}
+
+.admin-sidebar .nav-link.active {
+    background-color: #99bd5b !important;
+    color: white !important;
+    box-shadow: 0 5px 15px rgba(153, 189, 91, 0.3);
+}
+
+/* Statistics Cards */
+.stat-card {
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08) !important;
+}
+
+.stat-card.bg-primary-light {
+    background-color: #e8f5e9;
+    border-left: 5px solid #2F3E2F;
+}
+
+.stat-card.bg-success-light {
+    background-color: #f1f8e9;
+    border-left: 5px solid #99bd5b;
+}
+
+.stat-card.bg-warning-light {
+    background-color: #fff8e1;
+    border-left: 5px solid #ffa000;
+}
+
+.stat-card.bg-info-light {
+    background-color: #e0f2f1;
+    border-left: 5px solid #00ACC1;
+}
+
+.stat-value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #2F3E2F;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+/* Content Area */
+.admin-content-pane {
+    background-color: white;
+    border-radius: 25px;
+    padding: 40px !important;
+    border: none !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+}
+
+.pane-header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.pane-header h3 {
+    font-family: 'Cormorant', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2F3E2F;
+}
+
+/* Table Customization */
+.admin-table thead th {
+    background-color: #f9faf9;
+    color: #2F3E2F;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    border-top: none;
+    padding: 15px 20px;
+}
+
+.admin-table tbody td {
+    padding: 15px 20px;
+    border-color: #f1f1f1;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.admin-table tr:hover td {
+    background-color: #fcfdfc;
+}
+
+/* Buttons and Badges */
+.btn-admin {
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-admin-primary {
+    background-color: #2F3E2F;
+    border: none;
+    color: white;
+}
+
+.btn-admin-primary:hover {
+    background-color: #243024;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(47, 62, 47, 0.2);
+}
+
+.badge-custom {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Modal Styling */
+.admin-modal .modal-content {
+    border-radius: 25px;
+    border: none;
+    padding: 20px;
+}
+
+.admin-modal .modal-header {
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+
+.admin-modal .modal-title {
+    font-family: 'Cormorant', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #2F3E2F;
+}
+
+.admin-modal .form-label {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #2F3E2F;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.admin-modal .form-control,
+.admin-modal .form-select {
+    border-radius: 12px;
+    padding: 10px 15px;
+    border: 1px solid #eee;
+    background-color: #fcfdfc;
+}
+
+.admin-modal .form-control:focus {
+    border-color: #2F3E2F;
+    box-shadow: 0 0 0 4px rgba(47, 62, 47, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .admin-sidebar {
+        min-height: auto;
+        margin-bottom: 30px;
+    }
+
+    .admin-content-pane {
+        padding: 25px !important;
+    }
+}

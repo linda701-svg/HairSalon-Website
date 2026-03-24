@@ -1,0 +1,154 @@
+.header-container {
+    background-color: #ECF0D8;
+    /* Light olive/cream color from image */
+    padding: 10px 0;
+    font-family: 'Nunito', sans-serif;
+    /* Dark top border as seen in image */
+    transition: all 0.3s ease;
+}
+
+.header-logo {
+    height: 50px;
+    transition: transform 0.3s;
+}
+contact-nav-dropdown
+.header-logo:hover {
+    transform: scale(1.05);
+}
+
+.header-nav-link {
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    color: #2F3E2F !important;
+    /* Dark greenish gray */
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px !important;
+    transition: opacity 0.3s;
+}
+
+.header-nav-link:hover {
+    opacity: 0.7;
+}
+
+.header-socials {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header-social-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #2F3E2F;
+    color: #ECF0D8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.header-social-icon:hover {
+    transform: scale(1.1);
+    color: #ECF0D8;
+}
+
+.header-book-btn {
+    background-color: #2F3E2F;
+    color: #ECF0D8;
+    border: none;
+    border-radius: 0;
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 25px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.header-book-btn:hover {
+    background-color: #556B2F;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.header-book-btn.active {
+    background-color: #99bd5b;
+    color: #fff;
+}
+/* Mobile Toggler adjustments */
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.custom-navbar-dropdown{
+  
+    margin-left: -15px  !important;
+}
+
+
+.custom-navbar-dropdown .dropdown-item:hover {
+    background-color: #2F3E2F !important;
+    color: #ffffff !important; 
+    transition: all 0.3s ease;
+}
+
+
+.custom-navbar-dropdown .dropdown-item:active, 
+.custom-navbar-dropdown .dropdown-item.active {
+    background-color: #f0f4f0 !important; 
+    color: #2F3E2F !important;           
+}
+
+
+.custom-navbar-dropdown .dropdown-menu {
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 0; 
+    overflow: hidden; 
+}
+
+
+.custom-navbar-dropdown .dropdown-item {
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+/* drop-down */
+.custom-navb .dropdown-item:hover {
+    background-color: #2F3E2F !important;
+    color: #ffffff !important; 
+    transition: all 0.3s ease;
+}
+
+
+.custom-navb .dropdown-item:active, 
+.custom-navb .dropdown-item.active {
+    background-color: #f0f4f0 !important; 
+    color: #2F3E2F !important;           
+}
+
+
+.custom-navb .dropdown-menu {
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 0; 
+    overflow: hidden; 
+}
+
+
+.custom-navb .dropdown-item {
+    padding: 10px 20px;
+    font-weight: 500;
+}

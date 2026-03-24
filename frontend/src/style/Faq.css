@@ -1,0 +1,221 @@
+/* FAQ PAGE STYLES */
+
+.faq-hero-section {
+    background-color: #ECF0D8;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.faq-hero-title {
+    font-family: 'Cormorant', serif;
+    font-size: 5rem;
+    color: #2F3E2F;
+    margin-bottom: 10px;
+}
+
+.faq-hero-subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #2F3E2F;
+}
+
+/* WHY CHOOSE US SECTION */
+.faq-why-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.faq-why-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+    color: #2F3E2F;
+    margin-bottom: 5px;
+}
+
+.faq-why-subtitle {
+    font-family: 'Cormorant', serif;
+    font-size: 4rem;
+    color: #2F3E2F;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+.faq-why-text {
+    font-family: 'Nunito', sans-serif;
+    color: #2F3E2F;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+/* PROGRESS BARS */
+.faq-progress-item {
+    margin-bottom: 25px;
+}
+
+.faq-progress-label {
+    font-family: 'Cormorant', serif;
+    font-size: 1.2rem;
+    color: #2F3E2F;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+}
+
+.faq-custom-progress {
+    height: 10px;
+    background-color: #E8EDD1;
+    border-radius: 0;
+}
+
+.faq-custom-progress .progress-bar {
+    background-color: #2F3E2F;
+}
+
+/* ACCORDION STYLES */
+.faq-accordion-section {
+    padding: 100px 0;
+    background-color: #C1D0B1;
+    /* Olive background for the first accordion */
+}
+
+.faq-accordion-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-custom-accordion .accordion-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(47, 62, 47, 0.2);
+    margin-bottom: 10px;
+}
+
+.faq-custom-accordion .accordion-button {
+    background-color: transparent;
+    color: #2F3E2F;
+    font-family: 'Cormorant', serif;
+    font-size: 1.6rem;
+    padding: 20px 0;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+.faq-custom-accordion .accordion-button:not(.collapsed) {
+    color: #2F3E2F;
+    background-color: transparent;
+}
+
+.faq-custom-accordion .accordion-button::after {
+    filter: brightness(0) saturate(100%) invert(18%) sepia(13%) saturate(1063%) hue-rotate(81deg) brightness(92%) contrast(88%);
+}
+
+.faq-custom-accordion .accordion-body {
+    padding: 10px 0 30px;
+    font-family: 'Nunito', sans-serif;
+    color: #2F3E2F;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+/* SECOND FAQ SECTION (SPLIT) */
+.faq-split-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.faq-split-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 600px;
+    border-radius: 0;
+}
+
+.faq-split-content {
+    padding-left: 50px;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 991px) {
+    .faq-hero-section {
+        padding: 60px 0;
+    }
+
+    .faq-hero-title {
+        font-size: 3rem;
+    }
+
+    .faq-hero-subtitle {
+        font-size: 1.8rem;
+    }
+
+    .faq-why-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .faq-why-subtitle {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
+
+    .faq-why-text {
+        margin: 0 auto 20px;
+        font-size: 1rem;
+    }
+
+    .faq-split-content {
+        padding-left: 0;
+        margin-top: 50px;
+    }
+
+    .faq-accordion-section {
+        padding: 60px 0;
+    }
+
+    .faq-split-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .faq-custom-accordion .accordion-button {
+        font-size: 1.3rem;
+        padding: 15px 0;
+    }
+
+    .faq-why-subtitle {
+        font-size: 2.2rem;
+    }
+
+    .faq-split-image {
+        min-height: 400px;
+    }
+
+    .team-arch-wrapper {
+        margin: 0 auto 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .faq-hero-section {
+        padding: 40px 0;
+    }
+    
+    .faq-hero-title {
+        margin-top: 25px;
+    }
+    
+    .faq-custom-accordion .accordion-button {
+        font-size: 1.15rem;
+    }
+
+    .faq-why-text {
+        font-size: 0.95rem;
+    }
+}
