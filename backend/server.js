@@ -18,6 +18,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
+    
     origin: 'https://hairsalon-booking-6bg7.onrender.com', 
     credentials: true
 }));

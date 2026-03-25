@@ -22,7 +22,7 @@ const ServicesScreen = () => {
         };
         fetchServices();
     }, []);
-
+const API_URL = 'https://hairsalon-website-5inh.onrender.com';
     return (
         <div className="services-page" >
             {/* HERO SECTION */}
@@ -89,7 +89,8 @@ const ServicesScreen = () => {
                                             </p>
                                         </div>
                                         <div className="service-card-image-container">
-                                            <Image src={service.image.startsWith('/') ? `https://hairsalon-website-5inh.onrender.com${service.image}` : service.image} className="service-card-image" />
+                                            
+                                            <Image src={service.image.startsWith('/') ? `${API_URL}${service.image}` : service.image} className="service-card-image" />
                                             <div className="service-price-tag">${service.price}</div>
                                         </div>
                                         <div className="service-card-bottom">
