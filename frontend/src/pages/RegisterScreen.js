@@ -38,7 +38,7 @@ const RegisterScreen = () => {
             };
 
             const { data } = await axios.post(
-                'http://localhost:5000/api/users',
+                '/api/users',
                 { name, email, password, phone, role },
                 config
             );
