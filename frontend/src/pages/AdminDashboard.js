@@ -58,11 +58,11 @@ const AdminDashboard = () => {
             };
 
             const [appts, usrs, svcs, styls, inqs] = await Promise.all([
-                axios.get('http://localhost:5000/api/appointments', config),
-                axios.get('http://localhost:5000/api/users', config),
-                axios.get('http://localhost:5000/api/services'),
-                axios.get('http://localhost:5000/api/stylists'),
-                axios.get('http://localhost:5000/api/contacts', config),
+                axios.get('/api/appointments', config),
+                axios.get('/api/users', config),
+                axios.get('/api/services'),
+                axios.get('/api/stylists'),
+                axios.get('/api/contacts', config),
             ]);
 
             setAppointments(appts.data);
@@ -140,7 +140,7 @@ const AdminDashboard = () => {
                 },
             };
 
-            const { data } = await axios.post('http://localhost:5000/api/upload', formData, config);
+            const { data } = await axios.post('/api/upload', formData, config);
             if (type === 'service') {
                 setServiceForm({ ...serviceForm, image: data });
             } else {
@@ -165,9 +165,9 @@ const AdminDashboard = () => {
             };
 
             if (editingService) {
-                await axios.put(`http://localhost:5000/api/services/${editingService._id}`, serviceForm, config);
+                await axios.put(`/api/services/${editingService._id}`, serviceForm, config);
             } else {
-                await axios.post('http://localhost:5000/api/services', serviceForm, config);
+                await axios.post('/api/services', serviceForm, config);
             }
 
             handleCloseServiceModal();
@@ -186,7 +186,7 @@ const AdminDashboard = () => {
                         Authorization: `Bearer ${userInfo.token}`,
                     },
                 };
-                await axios.delete(`http://localhost:5000/api/services/${id}`, config);
+                await axios.delete(`/api/services/${id}`, config);
                 fetchData();
             } catch (err) {
                 alert('Failed to delete service');
@@ -210,9 +210,9 @@ const AdminDashboard = () => {
             };
 
             if (editingStylist) {
-                await axios.put(`http://localhost:5000/api/stylists/${editingStylist._id}`, submitData, config);
+                await axios.put(`/api/stylists/${editingStylist._id}`, submitData, config);
             } else {
-                await axios.post('http://localhost:5000/api/stylists', submitData, config);
+                await axios.post('/api/stylists', submitData, config);
             }
 
             handleCloseStylistModal();
@@ -231,7 +231,7 @@ const AdminDashboard = () => {
                         Authorization: `Bearer ${userInfo.token}`,
                     },
                 };
-                await axios.delete(`http://localhost:5000/api/stylists/${id}`, config);
+                await axios.delete(`/api/stylists/${id}`, config);
                 fetchData();
             } catch (err) {
                 alert('Failed to delete stylist');
@@ -248,7 +248,7 @@ const AdminDashboard = () => {
                         Authorization: `Bearer ${userInfo.token}`,
                     },
                 };
-                await axios.delete(`http://localhost:5000/api/contacts/${id}`, config);
+                await axios.delete(`/api/contacts/${id}`, config);
                 fetchData();
             } catch (err) {
                 setError(err.response?.data?.message || 'Failed to delete inquiry');
@@ -265,7 +265,7 @@ const AdminDashboard = () => {
                         Authorization: `Bearer ${userInfo.token}`,
                     },
                 };
-                await axios.delete(`http://localhost:5000/api/users/${id}`, config);
+                await axios.delete(`/api/users/${id}`, config);
                 fetchData();
             } catch (err) {
                 setError(err.response?.data?.message || 'Failed to delete user');
@@ -281,7 +281,7 @@ const AdminDashboard = () => {
                     Authorization: `Bearer ${userInfo.token}`,
                 },
             };
-            await axios.put(`http://localhost:5000/api/appointments/${id}/status`, { status }, config);
+            await axios.put(`/api/appointments/${id}/status`, { status }, config);
             fetchData();
         } catch (err) {
             alert('Failed to update status');
@@ -297,13 +297,15 @@ const AdminDashboard = () => {
                         Authorization: `Bearer ${userInfo.token}`,
                     },
                 };
-                await axios.delete(`http://localhost:5000/api/appointments/${id}`, config);
+                await axios.delete(`/api/appointments/${id}`, config);
                 fetchData();
             } catch (err) {
                 alert('Failed to delete appointment');
             }
         }
     };
+
+    const API_URL = 'https://hairsalon-website-5inh.onrender.com';
 
     if (loading) {
         return (
@@ -511,7 +513,7 @@ const AdminDashboard = () => {
                                             <tbody>
                                                 {services.map((svc) => (
                                                     <tr key={svc._id}>
-                                                        <td><Image src={svc.image.startsWith('/') ? `http://localhost:5000${svc.image}` : svc.image} style={{ width: '45px', height: '45px', objectFit: 'cover' }} rounded /></td>
+                                                        <td><Image src={svc.image.startsWith('/') ? `${API_URL}${svc.image}` : svc.image} style={{ width: '45px', height: '45px', objectFit: 'cover' }} rounded /></td>
                                                         <td className="fw-bold">{svc.title}</td>
                                                         <td><Badge bg="secondary" className="badge-custom text-uppercase" style={{ fontSize: '0.65rem' }}>{svc.category}</Badge></td>
                                                         <td className="fw-bold" style={{ color: '#99bd5b' }}>${svc.price}</td>
@@ -546,7 +548,7 @@ const AdminDashboard = () => {
                                             <tbody>
                                                 {stylists.map((sty) => (
                                                     <tr key={sty._id}>
-                                                        <td><Image src={sty.image.startsWith('/') ? `http://localhost:5000${sty.image}` : sty.image} style={{ width: '45px', height: '45px', objectFit: 'cover' }} roundedCircle /></td>
+                                                        <td><Image src={sty.image.startsWith('/') ? `${API_URL}${sty.image}` : sty.image} style={{ width: '45px', height: '45px', objectFit: 'cover' }} roundedCircle /></td>
                                                         <td className="fw-bold">{sty.name}</td>
                                                         <td>
                                                             {sty.specialties && (Array.isArray(sty.specialties) ? sty.specialties : [sty.specialties]).map((s, idx) => (
