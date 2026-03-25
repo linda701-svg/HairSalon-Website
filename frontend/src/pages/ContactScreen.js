@@ -15,7 +15,7 @@ const ContactScreen = () => {
         setStatus({ loading: true, success: false, error: null });
 
         try {
-            await axios.post('http://localhost:5000/api/contacts', { name, email, message });
+            await axios.post('/api/contacts', { name, email, message });
             setStatus({ loading: false, success: true, error: null });
             setName('');
             setEmail('');

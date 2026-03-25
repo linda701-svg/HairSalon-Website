@@ -32,8 +32,8 @@ const BookingScreen = () => {
             try {
                 setDataLoading(true);
                 const [svcRes, styRes] = await Promise.all([
-                    axios.get('http://localhost:5000/api/services'),
-                    axios.get('http://localhost:5000/api/stylists')
+                    axios.get('/api/services'),
+                    axios.get('/api/stylists')
                 ]);
                 setServices(svcRes.data);
                 setStylists(styRes.data);
@@ -70,7 +70,7 @@ const BookingScreen = () => {
             const combinedDate = new Date(`${bookingData.date}T${bookingData.time}`);
 
             await axios.post(
-                'http://localhost:5000/api/appointments',
+                '/api/appointments',
                 {
                     service: bookingData.service,
                     stylist: bookingData.stylist,
