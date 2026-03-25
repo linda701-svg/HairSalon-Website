@@ -38,7 +38,7 @@ const TeamScreen = () => {
             <Badge bg="danger">{error}</Badge>
         </Container>
     );
-
+const API_URL = 'https://hairsalon-website-5inh.onrender.com';
     return (
         <div className="team-page">
 
@@ -85,7 +85,7 @@ const TeamScreen = () => {
 
                                 <div className="stylist-card-image-wrapper">
                                     <Image
-                                        src={stylist.image.startsWith('/') ? `https://hairsalon-website-5inh.onrender.com${stylist.image}` : stylist.image}
+                                        src={stylist.image.startsWith('/') ? `${API_URL}${stylist.image}` : stylist.image}
                                         className="stylist-card-image"
                                     />
                                 </div>
