@@ -172,7 +172,7 @@
     .home-hero-images-container {
         height: 320px;
     }
-    
+
     .home-hero-title {
         font-size: 2.2rem;
     }
@@ -263,7 +263,7 @@
         padding: 40px 20px;
         z-index: 1;
     }
-    
+
     .story-title {
         font-size: 2.5rem;
     }
@@ -479,11 +479,11 @@
     .beauty-arch-section {
         padding: 60px 0;
     }
-    
+
     .beauty-arch-images-wrapper {
         height: 400px;
     }
-    
+
     .beauty-arch-title {
         font-size: 2.5rem;
     }
@@ -850,7 +850,7 @@
     .progress-title {
         font-size: 2.5rem;
     }
-    
+
     .progress-description {
         font-size: 1rem;
     }
@@ -1087,11 +1087,11 @@
         width: 100%;
         min-height: 350px;
     }
-    
+
     .blog-title-main {
         font-size: 2.5rem;
     }
-    
+
     .gallery-title {
         font-size: 3rem;
     }

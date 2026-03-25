@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './custom.scss';
 import Header from './components/Header';
@@ -18,11 +18,14 @@ import Gallery from './pages/Gallery';
 import AdminDashboard from './pages/AdminDashboard';
 
 
-function App() {
+const Layout = () => {
+  const location = useLocation();
+  const isAdminRoute = location.pathname.startsWith('/admin');
+
   return (
-    <Router>
-      <Header />
-      <main className="py-3">
+    <>
+      {!isAdminRoute && <Header />}
+      <main className={isAdminRoute ? "" : "py-3"}>
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/about" element={<AboutScreen />} />
@@ -38,7 +41,15 @@ function App() {
           <Route path="/faq" element={<FaqScreen />} />
         </Routes>
       </main>
-      <Footer />
+      {!isAdminRoute && <Footer />}
+    </>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <Layout />
     </Router>
   );
 }
