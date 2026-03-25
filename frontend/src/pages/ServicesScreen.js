@@ -12,7 +12,7 @@ const ServicesScreen = () => {
         const fetchServices = async () => {
             try {
                 setLoading(true);
-                const { data } = await axios.get('http://localhost:5000/api/services');
+                const { data } = await axios.get('/api/services');
                 setServices(data);
                 setLoading(false);
             } catch (err) {
@@ -89,7 +89,7 @@ const ServicesScreen = () => {
                                             </p>
                                         </div>
                                         <div className="service-card-image-container">
-                                            <Image src={service.image.startsWith('/') ? `http://localhost:5000${service.image}` : service.image} className="service-card-image" />
+                                            <Image src={service.image.startsWith('/') ? `https://hairsalon-website-5inh.onrender.com${service.image}` : service.image} className="service-card-image" />
                                             <div className="service-price-tag">${service.price}</div>
                                         </div>
                                         <div className="service-card-bottom">

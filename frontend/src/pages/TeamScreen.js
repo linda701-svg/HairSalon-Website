@@ -14,7 +14,7 @@ const TeamScreen = () => {
     useEffect(() => {
         const fetchStylists = async () => {
             try {
-                const { data } = await axios.get('http://localhost:5000/api/stylists');
+                const { data } = await axios.get('/api/stylists');
                 setStylists(data);
                 setLoading(false);
             } catch (err) {
@@ -85,7 +85,7 @@ const TeamScreen = () => {
 
                                 <div className="stylist-card-image-wrapper">
                                     <Image
-                                        src={stylist.image.startsWith('/') ? `http://localhost:5000${stylist.image}` : stylist.image}
+                                        src={stylist.image.startsWith('/') ? `https://hairsalon-website-5inh.onrender.com${stylist.image}` : stylist.image}
                                         className="stylist-card-image"
                                     />
                                 </div>
