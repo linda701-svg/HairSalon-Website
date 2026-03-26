@@ -45,12 +45,12 @@ const HomeScreen = () => {
                                 <Image
                                     src="https://kitpro.site/cabello/wp-content/uploads/sites/25/2021/05/beautiful-curly-hairstyle-PGN6QXL-879x1024.jpg"
                                     className="arch-image-left"
-                                    data-aos="fade-down"
+                                   
                                 />
                                 <Image
                                     src="https://kitpro.site/cabello/wp-content/uploads/sites/25/2021/05/girl-with-long-flowing-hair-view-from-the-back-on-UHZCGBC-683x1024.jpg"
                                     className="arch-image-right"
-                                    data-aos="fade-left"
+                                  
                                 />
 
                             </div>
